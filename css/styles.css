@@ -139,6 +139,26 @@ font-size: calc(10px + 14 * (100vw/1600));
 .footer__camera{
   margin-left: 17%;
 }
+@media (max-width: 767px) {
+  .nav{
+    font-size: calc(10px + (14 + 14 * 0.7) * ((100vw-320px)/1600));
+  }
+  .header__title{
+    font-size: calc(10px + (14 + 14 * 0.7) * ((100vw-320px)/1600));
+  }
+  .love__title{
+    font-size: calc(10px + (14 + 14 * 0.7) * ((100vw-320px)/1600));
+  }
+  .port__title{
+    font-size: calc(10px + (14 + 14 * 0.7) * ((100vw-320px)/1600));
+  }
+  .pport__title{
+    font-size: calc(10px + (14 + 14 * 0.7) * ((100vw-320px)/1600));
+  }
+  .footer__title{
+    font-size: calc(10px + (14 + 14 * 0.7) * ((100vw-320px)/1600));
+  }
+}
 .by{
   display: flex;
   justify-content: flex-end;
