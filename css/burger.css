@@ -1,0 +1,35 @@
+.menuburger{
+  margin: 50px;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+}
+.menuburger__line{
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  transition: 0.3s all linear;
+}
+.menuburger__line_first{
+  top: 0;
+}
+.menuburger__line_second, .menuburger__line_third{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menuburger__line_fourth{
+  bottom: 0;
+}
+.menuburger_active .menuburger__line_first, .menuburger_active .menuburger__line_fourth {
+  opacity: 0;
+}
+.menuburger_active .menuburger__line_second{
+  transform: translateY(-50%) rotate(45deg);
+}
+.menuburger_active .menuburger__line_third{
+  transform: translateY(-50%) rotate(-45deg);
+}
