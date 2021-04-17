@@ -21,7 +21,7 @@
     margin: 0;
   }
   .text{
-    margin: 0 15%;
+    margin: 5% 15%;
     max-width: 100%;
   }
   .page1__mobile{
@@ -31,7 +31,7 @@
     max-width: 100%;
     line-height: 110%;
     text-align: center;
-    font-size: calc(10px + 10 * (100vw/767));
+    font-size: calc(10px + 30 * (100vw/767));
   }
   .love{
     grid-template-columns: none;
@@ -40,11 +40,11 @@
                           "loveimg"
   }
   .love__title{
-    margin: 5% 0 0 0 ;
+    margin: 5% 5% ;
     max-width: 100%;
     line-height: 110%;
     text-align: center;
-    font-size: calc(10px + 10 * (100vw/767));
+    font-size: calc(10px + 30 * (100vw/767));
   }
   .ttl{
     display: flex;
@@ -55,6 +55,15 @@
     margin: 5%;
     max-width: 100%;
   }
+  .fttl{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .ftxt{
+    margin: 5%;
+    max-width: 100%;
+  }
   .port{
     grid-template-columns: none;
     grid-template-rows: 0.4fr 1fr;
@@ -62,11 +71,11 @@
                           "portimg"
   }
   .port__title{
-    margin: 5% 2.5% 0 2.5% ;
+    margin: 5% 5% ;
     max-width: 100%;
     line-height: 110%;
     text-align: center;
-    font-size: calc(10px + 10 * (100vw/767));
+    font-size: calc(10px + 30 * (100vw/767));
   }
   .pport{
     grid-template-columns: none;
@@ -75,10 +84,52 @@
                           "pportimg"
   }
   .pport__title{
-    margin: 5% 2.5% 0 2.5% ;
+    margin: 5% 5% ;
     max-width: 100%;
     line-height: 110%;
     text-align: center;
-    font-size: calc(10px + 10 * (100vw/767));
+    font-size: calc(10px + 30 * (100vw/767));
+  }
+  .footer__content{
+    grid-template-columns: none;
+    grid-template-rows: 1fr 0.2fr;
+    grid-template-areas:  "footertitle"
+                          "footericons"
+  }
+  .footer__icon{
+    justify-items: center;
+    margin-right: 5%;
+  }
+  .footer__icons{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .a{
+    padding: 5%;
+  }
+  .footer__title{
+    display: block;
+    margin: 0;
+    margin: 5% 5% ;
+    max-width: 100%;
+    line-height: 110%;
+    text-align: center;
+    font-size: calc(10px + 30 * (100vw/767));
+  }
+  .footer__mobile{
+    margin: 0;
+    max-width: 100%;
+    line-height: 110%;
+    text-align: center;
+    font-size: calc(10px + 30 * (100vw/767));
+  }
+  .by{
+    justify-content: center;
+    margin-left: 10%;;
+    max-width: 100%;
+    line-height: 110%;
+    text-align: center;
+    font-size: calc(10px + 15 * (100vw/767));
   }
 }

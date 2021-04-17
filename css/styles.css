@@ -6,7 +6,6 @@ body {
 .wrapper {
     min-width:  100vh;
     display: grid;
-    flex-direction: column;
 }
 .header__menu{
   display: flex;
@@ -102,7 +101,7 @@ grid-area: lovetitle;
 .pport{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "pporttitle pportimg" 
+  grid-template-areas: "pporttitle pportimg"
 }
 .pport__title{
   margin-left:  5%;
@@ -123,28 +122,33 @@ grid-area: lovetitle;
 }
 .footer__content{
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
   margin-top: 5%;
+  grid-template-areas:  "footertitle footericons"
 }
-.footer__conect{
-  display: flex;
+.footer__icon{
+  display: grid;
+  grid-area: footericons;
 }
 .footer__icons{
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 4%;
   margin-left: 7%;
 }
 .footer__title{
+  display: grid;
   margin-left: 5%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   line-height: 110%;
   font-size: calc(10px + 14 * (100vw/1600));
+  grid-area: footertitle;
 }
 .footer__camera{
   margin-left: 17%;
+  grid-area: footercam;
 }
 @media (max-width: 767px) {
   .header__content{
@@ -175,15 +179,16 @@ grid-area: lovetitle;
 }
 .by{
   display: flex;
-  justify-content: flex-end;
   margin-top: 17%;
   margin-right: 6.5%;
+  justify-content: flex-end;
   margin-bottom: 2%;
   font-family: Roboto;
 font-style: normal;
 font-weight: 300;
 line-height: 110%;
 font-size: calc(5px + 10 * (100vw/1600));
+grid-area: footerby;
 }
 .fttl{
   margin-top: 1%;
@@ -199,7 +204,7 @@ font-size: calc(5px + 10 * (100vw/1600));
   max-width: 100%;
 }
 .a{
-  padding: 10%;
+ padding: 1%;
 }
 a{
   color: #000;
