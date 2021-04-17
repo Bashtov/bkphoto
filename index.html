@@ -8,44 +8,50 @@
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/zero.css">
 <link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="css/mobilemenu.css">
     <title>BKPHOTO</title>
   </head>
 <body>
 <script scr="js/typevw.js"></script>
 <script scr="main.js"></script>
-  <div class="wrapper">
-    <header class="header">
-        <nav class="nav">
-          <div class="navmobile">
-            <div class="mobilemenu"></div>
-          </div>
-          <ul class="menu">
-            <li>
-              <a href="#" class="menu__link">ABOUT US</a>
-            </li>
-            <li>
-              <a href="#"class="menu__link">PORTFOLIO</a>
-            </li>
-            <li>
-              <a href="#"class="menu__link">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-      <div class="header__content">
-        <div class="header__avatar">
-          <img src="img/header.png" class="avatar" alt="">
+<div class="wrapper">
+  <header class="header">
+      <nav class="header__content">
+        <div class="header__mobile">
+          <div class="header__mobile menu"></div>
         </div>
-        <div class="header__title">
-          <div class="header__title title">What is BK PHOTO???</div>
-          <div class="header__title text">
+        <ul class="header__menu">
+          <li>
+            <a href="#part1" class="menu__link">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#part2"class="menu__link">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="#part3"class="menu__link">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <section id="#part1" class="page1">
+    <div class="page1__content">
+      <div class="page1__avatar">
+        <img src="img/header.png" class="avatar" alt="">
+      </div>
+      <div class="page1__mobile">
+        <div class="page1__title">
+          <div class="page1__title title">What is BK PHOTO???</div>
+          <div class="page1__title text">
             BK PHOTO - это индивидуальный подход к каждой модели, общение и работа до результата, который понравиться именно ВАМ! Мы встретимся с вами перед сьемкой и обсудим ваши и мои идеи для получения лучших фотографий для вашего Инстаграмма! Мы запечатляем ваши мечты :)
           </div>
         </div>
       </div>
-    </header>
-    <section class="content">
-      <hr></hr>
-      <div class="love">
+    </div>
+  </section>
+  <section id="#part2" class="content">
+    <hr></hr>
+    <div class="love">
+      <div class="love__mobile">
         <div class="love__title">
           <div class="love__title ttl">LOVE STORY</div>
           <div class="love__title txt">
@@ -53,17 +59,19 @@
             Идеальный подарок любимому)
           </div>
         </div>
-        <div class="love__img">
-          <img src="img/love.png" class="img"alt="">
+      </div>
+      <div class="love__img">
+        <img src="img/love.png" class="img"alt="">
+      </div>
+    </div>
+    <div class="port">
+      <div class="port__img">
+        <div class="port__sub">
+          <img src="img/p1.png" class="img"  alt="">
+          <img src="img/p2.png" class="img" alt="">
         </div>
       </div>
-      <div class="port">
-        <div class="port_img">
-          <div class="port_sub">
-            <img src="img/p1.png" class="img"  alt="">
-            <img src="img/p2.png" class="img" alt="">
-          </div>
-        </div>
+      <div class="port__mobile">
         <div class="port__title">
           <div class="port__title ttl">PORTARAIT</div>
           <div class="port__title txt">
@@ -73,54 +81,57 @@
           </div>
         </div>
       </div>
-      <div class="pport">
-        <div class="pport__title">
-          <div class="pport__title ttl">PORTARAIT PLUS</div>
-          <div class="pport__title txt">
-          Портрет в особой атмосфере, вы сами выбираете локацию, будь это сказка или уютная кухонька) Студия позволить получить уникальный свето-теневой рисунок и сделать ваши фото по-настоящему ВАУ!
+    </div>
+    <div class="pport">
+      <div class="port__mobile">
+       <div class="pport__title">
+         <div class="pport__title ttl">PORTARAIT PLUS</div>
+         <div class="pport__title txt">
+         Портрет в особой атмосфере, вы сами выбираете локацию, будь это сказка или уютная кухонька) Студия позволить получить уникальный свето-теневой рисунок и сделать ваши фото по-настоящему ВАУ!
+         </div>
+       </div>
+     </div>
+     <div class="pport_img">
+       <div class="pport_sub">
+         <img src="img/pp1.png" class="img" alt="">
+         <img src="img/pp2.png" class="img" alt="">
+       </div>
+     </div>
+    </div>
+    <hr></hr>
+  </section>
+  <footer id="#part3" class="footer ">
+    <div class="footer__content">
+      <div class="footer__conect">
+        <div class="footer__title">
+          <div class="footer__title fttl">Как со мной связаться?</div>
+          <div class="footer__title ftxt">
+            Напиши мне в директ в пометкой “фото” и укажи:
+            <p>  1. Тип фотосессии</p>
+            <p>  2. Количество людей</p>
+            <p>  3. Кратко опиши, что бы ты хотел видеть на фото </p>
           </div>
         </div>
-        <div class="pport_img">
-          <div class="pport_sub">
-            <img src="img/pp1.png" class="img" alt="">
-            <img src="img/pp2.png" class="img" alt="">
-          </div>
+        <div class="footer__icons">
+          <a href="https://vk.com/bashtovenko1" class="a">
+            <img src="img/icon/vk.png" alt="">
+          </a>
+          <a href="https://t.me/Basht03" class="a">
+            <img src="img/icon/tg.png" alt="">
+          </a>
+          <a href="http://instagram.com/_.bashtovenko_" class="a">
+            <img src="img/icon/instagram.png" alt="">
+          </a>
         </div>
       </div>
-      <hr></hr>
-    </section>
-    <footer class="footer">
-      <div class="footer__content">
-        <div class="footer__conect">
-          <div class="footer__title">
-            <div class="footer__title fttl">Как со мной связаться?</div>
-            <div class="footer__title ftxt">
-              Напиши мне в директ в пометкой “фото” и укажи:
-              <p>  1. Тип фотосессии</p>
-              <p>  2. Количество людей</p>
-              <p>  3. Кратко опиши, что бы ты хотел видеть на фото </p>
-            </div>
-          </div>
-          <div class="footer__icons">
-            <a href="https://vk.com/bashtovenko1" class="a">
-              <img src="img/icon/vk.png" alt="">
-            </a>
-            <a href="https://t.me/Basht03" class="a">
-              <img src="img/icon/tg.png" alt="">
-            </a>
-            <a href="http://instagram.com/_.bashtovenko_" class="a">
-              <img src="img/icon/instagram.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="footer__camera">
-          <img src="img/icon/icon2.png" class="" alt="">
-        </div>
+      <div class="footer__camera">
+        <img src="img/icon/icon2.png" class="" alt="">
       </div>
-      <div class="by">
+    </div>
+    <div class="by">
         Developed by Kirill Bashtovenko
-      </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
