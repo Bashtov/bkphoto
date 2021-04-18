@@ -1,5 +1,5 @@
 (function() {
-  const menuburger =document.querySellector('.menuburger');
-  menu__burger.addEventListener ('click', () => {menu__burger.classList.toggle('menuburger_active')
+  const mobilemenu =document.querySellector('.mobilemenu');
+  mobilemenu.addEventListener ('click', () => {mobilemenu.classList.toggle('mobilemenu_active')
   })
-}())
+}());
