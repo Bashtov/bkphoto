@@ -133,7 +133,7 @@ grid-area: lovetitle;
 .footer__icons{
   display: flex;
   flex-direction: column;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-left: 7%;
 }
 .footer__title{
@@ -194,7 +194,7 @@ grid-area: footerby;
   margin-top: 1%;
 }
 .ftxt{
-  margin-top: 5%;
+  margin-top: 8%;
 }
 .ttl{
   margin-top: 10%;

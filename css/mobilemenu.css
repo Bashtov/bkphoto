@@ -1,13 +1,18 @@
-.menu{
+.mobilemenu{
   display: none;
 }
-/*@media (max-width: 767px) {
-  .menu{
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100vh;
+  }
+  .mobilemenu span{
     display: block;
     width: 40px;
     height: 40px;
     border: 4px solid black;
     border-radius: 50%;
+    position: relative;
   }
   .header__content{
     width: 100%;
@@ -15,7 +20,8 @@
   }
   .header__menu{
     display: block;
-    background-color: yellow;
+    background-color: #FFB;
+    z-index: 5;
   }
   .menu__link{
     display: grid;
@@ -26,9 +32,10 @@
     margin: 0;
     padding: 40px 0;
   }
-  .header__mobile{
+  .mobilemenu{
     display: flex;
     justify-content: center;
-    background-color: red;
+    background-color: #FFF;
+    padding: 2% 0;
   }
 }

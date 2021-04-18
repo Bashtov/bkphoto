@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
@@ -13,27 +13,27 @@
   </head>
 <body>
 <script scr="js/typevw.js"></script>
-<script scr="main.js"></script>
+<script scr="js/main.js"></script>
 <div class="wrapper">
   <header class="header">
       <nav class="header__content">
-        <div class="header__mobile">
-          <div class="header__mobile menu"></div>
+        <div class="mobilemenu">
+            <span></span>
         </div>
         <ul class="header__menu">
           <li>
-            <a href="#part1" class="menu__link">ABOUT US</a>
+            <a data-goto=".id1" href="#" class="menu__link">ABOUT US</a>
           </li>
           <li>
-            <a href="#part2"class="menu__link">PORTFOLIO</a>
+            <a data-goto=".id2" href="#" class="menu__link">PORTFOLIO</a>
           </li>
           <li>
-            <a href="#part3"class="menu__link">CONTACT</a>
+            <a data-goto=".id3" href="#" class="menu__link">CONTACT</a>
           </li>
         </ul>
       </nav>
   </header>
-  <section id="#part1" class="page1">
+  <section class="page1 id1">
     <div class="page1__content">
       <div class="page1__avatar">
         <img src="img/header.png" class="avatar" alt="">
@@ -48,7 +48,7 @@
       </div>
     </div>
   </section>
-  <section id="#part2" class="content">
+  <section class="content id2">
     <hr></hr>
     <div class="love">
       <div class="love__mobile">
@@ -100,7 +100,7 @@
     </div>
     <hr></hr>
   </section>
-  <footer id="#part3" class="footer ">
+  <footer class="footer id3">
     <div class="footer__content">
         <div class="footer__mobile">
           <div class="footer__title">

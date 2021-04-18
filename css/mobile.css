@@ -1,4 +1,7 @@
 @media (max-width: 767px) {
+  .wrapper{
+    width: 90%;
+  }
   .page1__content{
     grid-template-columns: none;
     grid-template-rows: 1fr 2fr;
