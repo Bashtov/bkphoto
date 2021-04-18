@@ -2,6 +2,9 @@
   display: none;
 }
 @media (max-width: 767px) {
+  body.active{
+    overflow: hidden;
+  }
   .mobilemenu span{
     display: block;
     width: 40px;
@@ -10,14 +13,36 @@
     border-radius: 50%;
     position: relative;
   }
+  .mobilemenu.active span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid black;
+    border-radius: 50%;
+    background: #000;
+    position: relative;
+    transition: 0.3s all;
+  }
   .header__content{
     width: 100%;
+    background: none;
+    background-filter: none;
+  }
+  .header__content.active{
+    background: rgba(226, 226, 226, 0.6);
+    backdrop-filter: blur(4px);
     height: 100%;
   }
   .header__menu{
+    display: none;
+    position: relative;
+    transition: all 0.3s easy 0s;
+  }
+  .header__menu.active{
     display: block;
-    background-color: #FFB;
-    z-index: 5;
+    top: -0.1%;
+    width: 100%;
+    background-color: #FFF;
   }
   .menu__link{
     display: grid;
@@ -26,7 +51,7 @@
   }
   .header__menu li{
     margin: 0;
-    padding: 40px 0;
+    padding: 5% 0;
   }
   .mobilemenu{
     display: flex;
