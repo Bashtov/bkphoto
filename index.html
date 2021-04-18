@@ -12,8 +12,23 @@
     <title>BKPHOTO</title>
   </head>
 <body>
-<script scr="js/typevw.js"></script>
 <script scr="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 <div class="wrapper">
   <header class="header">
       <nav class="header__content">
@@ -22,18 +37,18 @@
         </div>
         <ul class="header__menu">
           <li>
-            <a data-goto=".id1" href="#" class="menu__link">ABOUT US</a>
+            <a href="#id1" class="menu__link">ABOUT US</a>
           </li>
           <li>
-            <a data-goto=".id2" href="#" class="menu__link">PORTFOLIO</a>
+            <a href="#id2" class="menu__link">PORTFOLIO</a>
           </li>
           <li>
-            <a data-goto=".id3" href="#" class="menu__link">CONTACT</a>
+            <a href="#id3" class="menu__link">CONTACT</a>
           </li>
         </ul>
       </nav>
   </header>
-  <section class="page1 id1">
+  <section id="id1" class="page1">
     <div class="page1__content">
       <div class="page1__avatar">
         <img src="img/header.png" class="avatar" alt="">
@@ -48,7 +63,7 @@
       </div>
     </div>
   </section>
-  <section class="content id2">
+  <section id="id2" class="content">
     <hr></hr>
     <div class="love">
       <div class="love__mobile">
@@ -100,7 +115,7 @@
     </div>
     <hr></hr>
   </section>
-  <footer class="footer id3">
+  <footer id="id3" class="footer">
     <div class="footer__content">
         <div class="footer__mobile">
           <div class="footer__title">
