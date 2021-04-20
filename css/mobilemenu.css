@@ -1,8 +1,8 @@
-.mobilemenu{
+/*.mobilemenu{
   display: none;
-}
+}*/
 @media (max-width: 767px) {
-  body.active{
+  /*body.active{
     overflow: hidden;
   }
   .mobilemenu span{
@@ -58,5 +58,8 @@
     justify-content: center;
     background-color: #FFF;
     padding: 2% 0;
+  }*/
+  nav{
+    display: none;
   }
 }

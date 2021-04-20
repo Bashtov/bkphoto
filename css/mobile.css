@@ -101,7 +101,7 @@
   }
   .footer__icon{
     justify-items: center;
-    margin-right: 5%;
+    padding-right: 5%;
   }
   .footer__icons{
     display: flex;
