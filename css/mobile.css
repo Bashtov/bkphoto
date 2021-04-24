@@ -1,40 +1,44 @@
 @media (max-width: 767px) {
   .wrapper{
-    width: 90%;
+    width: 100%;
   }
   .page1__content{
     grid-template-columns: none;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "avatar"
+                         "page1ttl"
   }
   .page1__avatar{
     display: grid;
     justify-items: center;
-    margin: 0;
+    margin: 0 12% 0 0;
   }
   .avatar{
-    width: 30%;
+    margin-top: 12%;
+    width: 70%;
   }
   .page1__title{
+    display: flex;
+    flex-direction: column;
     margin-left: 0;
     margin-top: 5%;
+    line-height: 110%;
   }
   .title{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
+    max-width: 100%;
     margin: 0;
+    font-size: calc(10px + 40 * (100vw/767));
   }
   .text{
     margin: 5% 15%;
     max-width: 100%;
+    font-size: calc(10px + 30 * (100vw/767));
+    text-align: center;
   }
   .page1__mobile{
     display: grid;
-    margin-left: 0%;
-    margin-right: 0%;
-    max-width: 100%;
-    line-height: 110%;
-    text-align: center;
-    font-size: calc(10px + 30 * (100vw/767));
   }
   .love{
     grid-template-columns: none;
@@ -47,16 +51,17 @@
     max-width: 100%;
     line-height: 110%;
     text-align: center;
-    font-size: calc(10px + 30 * (100vw/767));
   }
   .ttl{
     display: flex;
     justify-content: center;
+    font-size: calc(10px + 40 * (100vw/767));
     margin: 0;
   }
   .txt{
     margin: 5%;
     max-width: 100%;
+    font-size: calc(10px + 30 * (100vw/767));
   }
   .fttl{
     display: flex;
@@ -78,7 +83,6 @@
     max-width: 100%;
     line-height: 110%;
     text-align: center;
-    font-size: calc(10px + 30 * (100vw/767));
   }
   .pport{
     grid-template-columns: none;
@@ -91,25 +95,25 @@
     max-width: 100%;
     line-height: 110%;
     text-align: center;
-    font-size: calc(10px + 30 * (100vw/767));
   }
   .footer__content{
     grid-template-columns: none;
     grid-template-rows: 1fr 0.2fr;
     grid-template-areas:  "footertitle"
-                          "footericons"
+                          "footericon"
   }
   .footer__icon{
-    justify-items: center;
-    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10% 0 0;
+    width: 100%;
   }
   .footer__icons{
-    display: flex;
-    flex-direction: row;
     margin: 0;
+    max-width: 100%;
   }
   .a{
-    padding: 5%;
+    padding: 10%;
   }
   .footer__title{
     display: block;
@@ -122,10 +126,14 @@
   }
   .footer__mobile{
     margin: 0;
-    max-width: 100%;
+    width: 100%;
     line-height: 110%;
     text-align: center;
     font-size: calc(10px + 30 * (100vw/767));
+  }
+  footer{
+    background-image: none;
+    background-color: #000;
   }
   .by{
     justify-content: center;
