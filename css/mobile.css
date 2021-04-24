@@ -14,7 +14,7 @@
     margin: 0 12% 0 0;
   }
   .avatar{
-    margin-top: 12%;
+    margin-top: 5%;
     width: 70%;
   }
   .page1__title{
@@ -29,12 +29,12 @@
     justify-items: center;
     max-width: 100%;
     margin: 0;
-    font-size: calc(10px + 40 * (100vw/767));
+    font-size: calc(20px + 40 * (100vw/767));
   }
   .text{
     margin: 5% 15%;
     max-width: 100%;
-    font-size: calc(10px + 30 * (100vw/767));
+    font-size: calc(20px + 30 * (100vw/767));
     text-align: center;
   }
   .page1__mobile{
@@ -55,13 +55,13 @@
   .ttl{
     display: flex;
     justify-content: center;
-    font-size: calc(10px + 40 * (100vw/767));
+    font-size: calc(20px + 40 * (100vw/767));
     margin: 0;
   }
   .txt{
     margin: 5%;
     max-width: 100%;
-    font-size: calc(10px + 30 * (100vw/767));
+    font-size: calc(20px + 30 * (100vw/767));
   }
   .fttl{
     display: flex;
