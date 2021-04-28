@@ -154,9 +154,6 @@ footer{
   display: flex;
   margin-top: 2%;
 }
-.fimg{
-
-}
 .footer__title{
   display: grid;
   margin-left: 7%;
@@ -185,7 +182,7 @@ grid-area: footerby;
   margin-top: 1%;
 }
 .ftxt{
-  margin-top: 8%;
+  margin-top: 10%;
 }
 .ttl{
   margin-top: 10%;
