@@ -22,19 +22,19 @@
     flex-direction: column;
     margin-left: 0;
     margin-top: 5%;
-    line-height: 110%;
   }
   .title{
     display: grid;
     justify-items: center;
     max-width: 100%;
     margin: 0;
-    font-size: calc(20px + 40 * (100vw/767));
+    font-size: calc(15px + 40 * (100vw/767));
   }
   .text{
-    margin: 5% 10% 0 15%;
+    margin: 5% 10% 5% 15%;
     max-width: 100%;
-    font-size: calc(20px + 30 * (100vw/767));
+    line-height: 120%;
+    font-size: calc(15px + 30 * (100vw/767));
     text-align: start;
   }
   .page1__mobile{
@@ -55,13 +55,13 @@
   .ttl{
     display: flex;
     justify-content: center;
-    font-size: calc(20px + 40 * (100vw/767));
+    font-size: calc(15px + 40 * (100vw/767));
     margin: 0;
   }
   .txt{
     margin: 5%;
     max-width: 100%;
-    font-size: calc(20px + 30 * (100vw/767));
+    font-size: calc(15px + 30 * (100vw/767));
   }
   .fttl{
     display: flex;
@@ -105,15 +105,17 @@
   .footer__icon{
     display: flex;
     justify-content: center;
-    padding: 0 10% 0 0;
+    padding: 0;
     width: 100%;
   }
   .footer__icons{
-    margin: 0;
+    margin: 0 12% 0 0;
     max-width: 100%;
   }
+  .fimg{
+    width: 60px;
+  }
   .a{
-    padding: 10%;
   }
   .footer__title{
     display: block;
@@ -121,15 +123,8 @@
     margin: 5% 5% ;
     max-width: 100%;
     line-height: 110%;
-    text-align: center;
-    font-size: calc(10px + 30 * (100vw/767));
-  }
-  .footer__mobile{
-    margin: 0;
-    width: 100%;
-    line-height: 110%;
-    text-align: center;
-    font-size: calc(10px + 30 * (100vw/767));
+    text-align: start;
+    font-size: calc(20px + 30 * (100vw/767));
   }
   footer{
     background-image: none;
@@ -137,7 +132,8 @@
   }
   .by{
     justify-content: center;
-    margin-left: 10%;;
+    margin-left: 10%;
+    margin-bottom: 4%;
     max-width: 100%;
     line-height: 110%;
     text-align: center;
