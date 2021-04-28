@@ -115,7 +115,8 @@
   .fimg{
     width: 60px;
   }
-  .a{
+  a:hover{
+    transform: none;
   }
   .footer__title{
     display: block;

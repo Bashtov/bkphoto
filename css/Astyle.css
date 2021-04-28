@@ -1,0 +1,85 @@
+html,
+body {
+  height: 100%;
+  background-color: #000;
+}
+.wrapper {
+    min-width:  100vh;
+    display: grid;
+}
+.header__menu{
+  display: flex;
+  justify-content: center;
+}
+.menu__link:hover{
+  font-size: calc(12px + 14 * (100vw/1600));
+  transition: all 1s easy 0;
+}
+a{
+  color: #FFF;
+}
+li{
+  margin: 1% 4%;
+}
+li:hover{
+  margin: 0.9% 3.65%;
+}
+.header__content{
+background: #000;
+/*backdrop-filter: blur(4px);*/
+width: 100%;
+position: fixed;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: 110%;
+font-size: calc(10px + 14 * (100vw/1600));
+}
+.content__title{
+  display: grid;
+  justify-items: start;
+  margin-top: 30%;
+  margin-left: 15%;
+  grid-area: content1ttl;
+}
+.content__avatar{
+  display: grid;
+  justify-items: center;
+  margin-right: 10%;
+  grid-area: avatar;
+}
+.avatar{
+  margin-top: 15%;
+  width: 85%;
+}
+.title{
+margin-top: 4%;
+font-size: calc(10px + 38 * (100vw/1600));
+}
+.text{
+  font-size: calc(14px + 8 * (100vw/1600));
+margin-top: 20%;
+max-width: 90%;
+}
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: #FFF;
+  grid-template-areas: "contentttl avatar"
+}
+.by{
+  display: flex;
+  margin: 10% 6.5% 0 0;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+line-height: 110%;
+color: #FFF;
+font-size: calc(5px + 10 * (100vw/1600));
+}

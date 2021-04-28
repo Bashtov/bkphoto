@@ -1,0 +1,100 @@
+html,
+body {
+  height: 100%;
+  background-color: #000;
+}
+.wrapper {
+    min-width:  100vh;
+    display: grid;
+}
+.header__menu{
+  display: flex;
+  justify-content: center;
+}
+.menu__link:hover{
+  font-size: calc(12px + 14 * (100vw/1600));
+  transition: all 1s easy 0;
+}
+a{
+  color: #FFF;
+}
+li{
+  margin: 1% 4%;
+}
+li:hover{
+  margin: 0.9% 3.65%;
+}
+.header__content{
+background: #000;
+/*backdrop-filter: blur(4px);*/
+width: 100%;
+position: fixed;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: 110%;
+font-size: calc(10px + 14 * (100vw/1600));
+}
+.content__title{
+  margin: 5% 0 5% 0;
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 42px;
+color: #FFF;
+}
+.content__text{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: start;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 42px;
+color: #FFF;
+grid-template-areas: "insta insta1 email e1"
+                     "tg tg1 vk vk1";
+margin: 5% 10% 17% 10% ;
+}
+.inst1{
+  grid-area: insta1;
+}
+.tg1{
+  grid-area: tg1;
+}
+.e1{
+  grid-area: e1;
+}
+.vk1{
+  grid-area: vk1;
+}
+.inst{
+  grid-area: insta;
+}
+.tg{
+  grid-area: tg;
+}
+.email{
+  padding: 0 0 0 40%;
+  grid-area: email;
+}
+.vk{
+  padding: 0 0 0 40%;
+  grid-area: vk;
+}
+.by{
+  display: flex;
+  margin: 12% 6.5% 0 0;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+line-height: 110%;
+color: #FFF;
+font-size: calc(5px + 10 * (100vw/1600));
+}

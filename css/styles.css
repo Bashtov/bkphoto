@@ -12,7 +12,7 @@ body {
   justify-content: center;
 }
 a:hover{
-  font-size: calc(12px + 14 * (100vw/1600));
+  transform: scale(1.1);
   transition: all 1s easy 0;
 }
 .header__content{
@@ -206,7 +206,8 @@ li{
   margin: 1% 4%;
 }
 li:hover{
-  margin: 0.9% 3.65%;
+  transform: scale(1.1);
+  transition: all 1s easy 0s;
 }
 hr{
   border: none;
